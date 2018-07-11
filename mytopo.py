@@ -2,7 +2,7 @@ from mininet.topo import Topo
 
 class MyTopo(Topo):
     def __init__(self):
-        Topo._init_(self)
+        Topo.__init__(self)
 
         h1 = self.addHost('h1')
         h2 = self.addHost('h2')
