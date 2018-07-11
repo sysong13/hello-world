@@ -24,7 +24,13 @@ class MyTopo(Topo):
         self.addLink(h4, s2)
         self.addLink(h5, s2)
         self.addLink(h6, s2)
+        self.addLink(s1, s3)
+        self.addLink(s1, s4)
+        self.addLink(s1, s5)
+        self.addLink(s2, s3)
+        self.addLink(s2, s4)
+        self.addLink(s2, s5)
 
-topos ={'mytopo':(lambda :MyTopo)}
+topos ={'mytopo':(lambda :MyTopo())}
 
 
